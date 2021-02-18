@@ -1,7 +1,7 @@
-require 'pry'
+#require 'pry'
 def nyc_pigeon_organizer(data)
   the_end = data.each_with_object({}) do |(key, value), accumulatorarr|
-    binding.pry
+    #binding.pry
     value.each do |insidekey, names|
       names.each do |lastname|
         if !accumulatorarr[lastname]
@@ -15,6 +15,6 @@ accumulatorarr[lastname][key].push(insidekey)
     end
     #accumulatorarr
   end
-  binding.pry
+  #binding.pry
   # write your code here!
 end
