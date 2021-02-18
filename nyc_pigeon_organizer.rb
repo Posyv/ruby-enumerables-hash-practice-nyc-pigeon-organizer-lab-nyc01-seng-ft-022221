@@ -7,6 +7,7 @@ def nyc_pigeon_organizer(data)
         if !accumulatorarr[lastname]
           accumulatorarr[lastname] = {}
         end
+        if !accumulatorarr[lastname][key] = []
         end
     end
     accumulatorarr
