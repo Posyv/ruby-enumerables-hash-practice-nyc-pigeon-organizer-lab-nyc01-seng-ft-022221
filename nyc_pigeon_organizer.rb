@@ -6,9 +6,11 @@ def nyc_pigeon_organizer(data)
       names.each do |lastname|
         if !accumulatorarr[lastname]
           accumulatorarr[lastname] = {}
-            if !accumulatorarr[lastname][key] = []
         end
-
+            if !accumulatorarr[lastname][key]
+              !accumulatorarr[lastname][key] = []
+        end
+accumulatorarr[lastname][key].push(insidekey)
         end
     end
     accumulatorarr
